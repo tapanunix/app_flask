@@ -3,4 +3,5 @@ FROM python
 RUN pip install flask
 COPY app.py .
 EXPOSE 8080
+ENV NAME bibek
 ENTRYPOINT FLASK_APP=/app.py flask run --host=0.0.0.0 --port=8080
